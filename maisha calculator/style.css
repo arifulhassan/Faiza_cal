@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 16px;
+    background-color: #cfd9fa;
+}
+
+.calculator{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.calc-container{
+    background-color: #5776e0;
+
+    width: 300px;
+    height: auto;
+
+    border-radius: 0 0 30px 30px;
+}
+
+.output{
+    width: 100%;;
+}   
+
+.operation{
+    width: 300px;
+    height: 70px;
+
+    color: #FFF;
+
+    font-size: 1.9em;
+    font-weight: bold;
+
+    position: relative;
+    overflow: hidden;
+}
+.operation .value{
+    position: absolute;
+
+    bottom: 5px;
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.result{
+    width: 300px;
+    height: 140px;
+
+    color: #FFF;
+
+    font-size: 2.7em;
+    font-weight: bold;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.result .value{
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.input{
+    background-color: #FFF;
+
+    border-radius: 0 0 25px 25px;
+    border: 1px solid #FFF;
+    height: 340px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row button{
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.5em;
+
+    /* border: none; */
+
+    border-radius: 50%;
+    border: 1px solid #f2f2f2;
+
+    background-color: transparent;
+    /* background-color: #fcfcfc; */
+    color: #1d80ad;
+
+    margin : 8px;
+
+    cursor: pointer;
+}
+
+.row button:hover{
+    font-weight: bold;
+}
+
+.row #calculate{
+    color: #ffffff;
+    background-color: #97afff;
+    width : 121px;
+    border-radius: 50px;
+}
+.row #delete{
+    color: #FFF;
+    background-color: #e05046;
+}
+
+#division, #multiplication, #subtraction, #addition {
+    background-color: #97afff;
+    color: #ffffff;
+}
+/* #calculate{
+    background-color: #cfd9fa;
+    color: #92a5eb;
+
+} */
